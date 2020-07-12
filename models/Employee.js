@@ -5,6 +5,7 @@ const EmployeeSchema = new mongoose.Schema({
   lastName: { type: String, required: true },
   middleName: { type: String },
   employeeID: { type: Number, required: true },
+  employeeType: { type: String, required: true },
   password: { type: String, required: true },
   dateOfHire: { type: Date, required: true },
   email: { type: String, required: true },
@@ -13,4 +14,4 @@ const EmployeeSchema = new mongoose.Schema({
   assignments: [],
 });
 
-module.exports = Employee = mongoose.model("employee", EmployeeSchema);
+module.exports = Employees = mongoose.model("employee", EmployeeSchema);
